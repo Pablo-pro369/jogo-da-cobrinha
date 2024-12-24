@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000000;
+    margin: 0;
+}
+
+canvas {
+    border: 1px solid #000;
+    background-color: #ffffff; /* Certifique-se de que o canvas tenha um fundo visível */
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    color: #eee8e8;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#startButton {
+    background-color: green;
+}
+
+#gameOverButton {
+    background-color: red;
+    display: none;
+}
+
+#buttonContainer, #gameOverContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#scoreContainer {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    color: #0f5ae6;
+}
